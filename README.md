@@ -38,6 +38,8 @@ I'm looking at from the start.
 rpg-pad - Tool for character creation and more unified game playing.
 Copyright (C) 2013 Stephan Broek
 
+Stephan Broek - stephan@mneme.me
+
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
