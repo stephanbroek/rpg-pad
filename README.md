@@ -35,6 +35,7 @@ I'm looking at from the start.
 
 ---
 
+rpg-pad - Tool for character creation and more unified game playing.
 Copyright (C) 2013 Stephan Broek
 
 This program is free software; you can redistribute it and/or modify
