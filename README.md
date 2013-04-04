@@ -30,8 +30,10 @@ has been made:
 
 
 Lots of other things will obviously be made aswell but for now these are the main features 
-I'm looking at from the start
+I'm looking at from the start.
 
+
+---
 
 Copyright (C) 2013 Stephan Broek
 
