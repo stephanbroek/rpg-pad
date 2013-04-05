@@ -7,6 +7,9 @@ party members and to the GM.
 
 All there to make it easier to play and less time trying to make and maintain characters.
 
+A current copy is running on rpg-pad.mneme.me not functional yet but you can see the current 
+code in action there
+
 planned features
 --------
 - a pathfinder character sheet which is completely fillable
