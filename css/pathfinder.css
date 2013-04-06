@@ -1,8 +1,4 @@
-table input {
-	width:50px;
-}
-
-div#player input {
+input {
 	margin: 0 -4px;
 	border-top:0;
 	border-right:0;
@@ -23,4 +19,19 @@ input.two {
 
 input.one {
 	width:16.5%;
+}
+
+div#stats input {
+	width:60px;
+}
+
+div#stats tr>:first-child {
+	width: 50px;
+	text-align: left;
+	font-weight: bold;
+}
+
+div#stats tr:first-child{
+	font-weight: 400;
+	font-size: 67%;
 }
