@@ -15,7 +15,7 @@ ul#tabs li {
 
 ul#tabs li a {
 	color:#42454a;
-	background-color:#dedbde;
+	background-color:#F6EDC6;
 	border:1px solid #c9c3ba;
 	border-bottom:none;
 	text-decoration:none;
@@ -23,19 +23,19 @@ ul#tabs li a {
 }
 
 ul#tabs li a:hover {
-	background-color:#f1f0ee;
+	background-color:#FFF9CE;
 }
 
 ul#tabs li a.selected {
 	color:#000;
-	background-color:#f1f0ee;
+	background-color:#FFF9CE;
 	font-weight:700;
 	padding:.7em .3em .38em;
 }
 
 div.tabContent {
 	border:1px solid #c9c3ba;
-	background-color:#f1f0ee;
+	background-color:#FFF9CE;
 	padding:.5em;
 	min-width:1000px;
 }

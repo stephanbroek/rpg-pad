@@ -2,24 +2,25 @@ table input {
 	width:50px;
 }
 
-input {
-	margin: 0;
+div#player input {
+	margin: 0 -4px;
+	border-top:0;
+	border-right:0;
+	background-color: #FFF9CE;
 }
 
 input.six {
-	width:95.3%;
+	width:99%;
 }
 
 input.three {
-	width:47.3%;
+	width:49.5%;
 }
 
 input.two {
-	width:31.3%;
+	width:33%;
 }
 
 input.one {
-	width:15.3%;
+	width:16.5%;
 }
-
-input.
