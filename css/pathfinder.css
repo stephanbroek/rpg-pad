@@ -23,6 +23,7 @@ input.one {
 
 div#stats input {
 	width:60px;
+	text-align: center;
 }
 
 div#stats tr>:first-child {
