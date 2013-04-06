@@ -1,75 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
+	<head>
 
-    <title>Pathfinder Character sheet</title>
+		<title>Pathfinder Character sheet</title>
 
-    <link href="css/tabs.css" rel="stylesheet" />
+		<link href="css/tabs.css" rel="stylesheet" />
+		<link href="css/pathfinder.css" rel="stylesheet" />
 
-    <script src="js/tabs.js" type="text/javascript">
-    </script>
-  </head>
-  <body onload="init()">
-    <h1>Pathfinder Character Sheet</h1>
+		<script src="js/tabs.js" type="text/javascript">
+		</script>
+	</head>
+	<body onload="init()">
+		<h1>Pathfinder Character Sheet</h1>
 
-    <ul id="tabs">
-      <li><a href="#character">Character Information</a></li>
-      <li><a href="#attack">Attacks &amp; defence</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#feats">Feats, Features &amp; Powers</a></li>
-      <li><a href="#items">Equipment</a></li>
-      <li><a href="#magic">Spells</a></li>
-      <li><a href="#familiar">Familliar</a></li>
-    </ul>
+		<ul id="tabs">
+			<li><a href="#character">Character Information</a></li>
+			<li><a href="#attack">Attacks &amp; defence</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#feats">Feats, Features &amp; Powers</a></li>
+			<li><a href="#items">Equipment</a></li>
+			<li><a href="#magic">Spells</a></li>
+			<li><a href="#familiar">Familliar</a></li>
+		</ul>
 
-    <div class="tabContent" id="character">
-      <h2>Character Information</h2>
-      <div>
-        <p>test</p>
-      </div>
-    </div>
+		<div class="tabContent" id="character">
+			<h2>Character Information</h2>
+			<div id="player">
+				<p>
+				<input name="character" placeholder="Character"></input>
+				<input name="player" placeholder="Player"></input>
+				<br>
+				<input name="race" placeholder="Race &amp; LA"></input>
+				<input name="size" placeholder="Size"></input>
+				<input name="gender" placeholder="Gender"></input>
+				<input name="height" placeholder="Height"></input>
+				<input name="weight" placeholder="Weight"></input>
+				<br>
+				<input name="age" placeholder="Age"></input>
+				<input name="alignment" placeholder="Alignment"></input>
+				<input name="deity" placeholder="Deity"></input>
+				<input name="background" placeholder="Background Occupation"></input>
+				<br>
+				<input name="languages" placeholder="languages"></input>
+				</p>
+			</div>
+			<div id="stats">
+				<p>
+					<table>
+						<tr>
+							<th></th>
+							<th>Tot</th>
+							<th>Mod</th>
+							<th>Base</th>
+							<th>Inherrit</th>
+							<th>Enhance</th>
+							<th>Misc</th>
+						<tr>
+							<th>Str</th>
+							<th><input name="str-tot"></input></th>
+							<th><input name="str-mod"></input></th>
+							<th><input name="str-base"></input></th>
+							<th><input name="str-inherrit"></input></th>
+							<th><input name="str-enhance"></input></th>
+							<th><input name="str-misc"></input></th>
+						</tr>
+						<tr>
+							<td>Dex</td>
+							<td><input name="dex-tot"></input></td>
+							<th><input name="dex-mod"></input></th>
+							<th><input name="dex-base"></input></th>
+							<th><input name="dex-inherrit"></input></th>
+							<th><input name="dex-enhance"></input></th>
+							<th><input name="dex-misc"></input></th>
+						</tr>
+						<tr>
+							<td>Con</td>
+							<td><input name="con-tot"></input></td>
+							<th><input name="con-mod"></input></th>
+							<th><input name="con-base"></input></th>
+							<th><input name="con-inherrit"></input></th>
+							<th><input name="con-enhance"></input></th>
+							<th><input name="con-misc"></input></th>
+						</tr>
+						<tr>
+							<td>Int</td>
+							<td><input name="int-tot"></input></td>
+							<th><input name="int-mod"></input></th>
+							<th><input name="int-base"></input></th>
+							<th><input name="int-inherrit"></input></th>
+							<th><input name="int-enhance"></input></th>
+							<th><input name="int-misc"></input></th>
+						</tr>
+						<tr>
+							<td>Wis</td>
+							<td><input name="wis-tot"></input></td>
+							<th><input name="wis-mod"></input></th>
+							<th><input name="wis-base"></input></th>
+							<th><input name="wis-inherrit"></input></th>
+							<th><input name="wis-enhance"></input></th>
+							<th><input name="wis-misc"></input></th>
+						</tr>
+						<tr>
+							<td>Cha</td>
+							<td><input name="cha-tot"></input></td>
+							<th><input name="cha-mod"></input></th>
+							<th><input name="cha-base"></input></th>
+							<th><input name="cha-inherrit"></input></th>
+							<th><input name="cha-enhance"></input></th>
+							<th><input name="cha-misc"></input></th>
+						</tr>
+					</table>
+				</p>
+			</div>
+		</div>
 
-    <div class="tabContent" id="attack">
-      <h2>Attacks &amp; defence</h2>
-      <div>
-        <p>more test</p>
-      </div>
-    </div>
+		<div class="tabContent" id="attack">
+			<h2>Attacks &amp; defence</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
 
-    <div class="tabContent" id="skills">
-      <h2>Skills</h2>
-      <div>
-        <p>more test</p>
-      </div>
-    </div>
+		<div class="tabContent" id="skills">
+			<h2>Attacks &amp; defence</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
 
-    <div class="tabContent" id="feats">
-      <h2>Feats, Features &amp; Powers</h2>
-      <div>
-        <p>more test</p>
-      </div>
-    </div>
+		<div class="tabContent" id="feats">
+			<h2>Attacks &amp; defence</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
 
-    <div class="tabContent" id="items">
-      <h2>Equipment</h2>
-      <div>
-        <p>more test</p>
-      </div>
-    </div>
-    
-    <div class="tabContent" id="magic">
-      <h2>Spells</h2>
-      <div>
-        <p>more test</p>
-      </div>
-    </div>
+		<div class="tabContent" id="items">
+			<h2>Attacks &amp; defence</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
+		
+		<div class="tabContent" id="magic">
+			<h2>Attacks &amp; defence</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
 
-    <div class="tabContent" id="familiar">
-      <h2>Familliar</h2>
-      <div>
-        <p>more test</p>
-      </div>
-    </div>
+		<div class="tabContent" id="familiar">
+			<h2>Attacks &amp; defence</h2>
+			<div>
+				<p>more test</p>
+			</div>>
+		</div>
 
-  </body>
+	</body>
 </html>
