@@ -1,14 +1,15 @@
 rpg-pad
 =======
 
-The goal for this project is to make it easier to create and play RPGs by having better 
-character sheets which are more easily editable and important information shared between
-party members and to the GM.
+The goal for this project is to make it easier to create and play RPGs 
+by having better character sheets which are more easily editable and 
+important information shared betweenparty members and to the GM.
 
-All there to make it easier to play and less time trying to make and maintain characters.
+All there to make it easier to play and less time trying to make and 
+maintain characters.
 
-A current copy is running on http://rpg-pad.mneme.me/ not functional yet but you can see the current 
-code in action there
+A current copy is running on http://rpg-pad.mneme.me/ not functional 
+yet but you can see the current code in action there
 
 planned features
 --------
@@ -16,24 +17,25 @@ planned features
 - Player name, Character name, Class, Race and HP shared with everyone
 - Character sheets from all players shared with the GM
 - All things live update between browsers connected to the same game
-- Notes which are shared between a every one, a player and the GM and completely 
-  private notes
+- Notes which are shared between a every one, a player and the GM and 
+  completely private notes
 - links embedable in all places to help keep track of rules
 
 
 later stage features
 ------
-Nice to have but will require quite a bit of effort so will be done once a working product 
-has been made:
+Nice to have but will require quite a bit of effort so will be done 
+once a working product has been made:
 
-- race and class will autocomplete and will automatically fill in appropriate fields
+- race and class will autocomplete and will automatically fill in 
+  appropriate fields
 - common feats, spells and other such stuff will autocomplete
 - Level up button which will allow for quick levelups.
 - Other character sheets for other RPG formats
 
 
-Lots of other things will obviously be made aswell but for now these are the main features 
-I'm looking at from the start.
+Lots of other things will obviously be made aswell but for now these 
+are the main features I'm looking at from the start.
 
 
 ---

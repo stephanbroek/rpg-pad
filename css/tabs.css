@@ -37,6 +37,7 @@ div.tabContent {
 	border:1px solid #c9c3ba;
 	background-color:#f1f0ee;
 	padding:.5em;
+	min-width:1000px;
 }
 
 div.tabContent.hide {
