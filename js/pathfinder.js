@@ -7,7 +7,17 @@ function recalcstat(stat)
 			sum+=val;	
 		
 	})
-	mod=Math.floor((sum-10)/2)
-	$('input[name=' + stat + '-tot]').val(sum);
-	$('input[name=' + stat + '-mod]').val((mod>=0 ? "+" : "") + mod);
+	mod=Math.floor((sum-10)/2);
+	$('#' + stat + '-tot').html(sum);
+	$('#' + stat + '-mod').html((mod>=0 ? "+" : "") + mod);
+}
+
+function setup()
+{
+	recalcstat("str");
+	recalcstat("dex");
+	recalcstat("con");
+	recalcstat("int");
+	recalcstat("wis");
+	recalcstat("cha");
 }

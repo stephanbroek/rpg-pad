@@ -29,10 +29,22 @@ div#stats input {
 div#stats tr>:first-child {
 	width: 50px;
 	text-align: left;
-	font-weight: bold;
 }
 
 div#stats tr:first-child{
 	font-weight: 400;
 	font-size: 67%;
+}
+
+div#stats .tot, div#stats .mod {
+	font-weight: bold;
+	text-align: center;
+}
+
+div#stats .tot {
+	width:40px;
+}
+
+div #stats .mod {
+	width:60px;
 }

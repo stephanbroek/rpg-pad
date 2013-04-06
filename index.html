@@ -11,7 +11,7 @@
 		<script src="js/tabs.js" type="text/javascript"></script>
 		<script src="js/pathfinder.js" type="text/javascript"></script>
 	</head>
-	<body onload="init()">
+	<body>
 		<h1>Pathfinder Character Sheet</h1>
 
 		<ul id="tabs">
@@ -59,57 +59,57 @@
 						</tr>
 						<tr>
 							<th>Str</th>
-							<th><input name="str-tot" disabled></input></th>
-							<th><input name="str-mod" disabled></input></th>
-							<th><input name="str-base" class="str" onblur="recalcstat('str')"></input></th>
-							<th><input name="str-inherrit" class="str" onblur="recalcstat('str')"></input></th>
-							<th><input name="str-enhance" class="str" onblur="recalcstat('str')"></input></th>
-							<th><input name="str-misc" class="str" onblur="recalcstat('str')"></input></th>
+							<td class="tot" id="str-tot"></th>
+							<td class="mod" id="str-mod"></th>
+							<td><input name="str-base" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-inherrit" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-enhance" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-misc" class="str" onblur="recalcstat('str')"></input></th>
 						</tr>
 						<tr>
-							<td>Dex</td>
-							<td><input name="dex-tot" disabled></input></td>
-							<th><input name="dex-mod" disabled></input></th>
-							<th><input name="dex-base" class="dex" onblur="recalcstat('dex')"></input></th>
-							<th><input name="dex-inherrit" class="dex" onblur="recalcstat('dex')"></input></th>
-							<th><input name="dex-enhance" class="dex" onblur="recalcstat('dex')"></input></th>
-							<th><input name="dex-misc" class="dex" onblur="recalcstat('dex')"></input></th>
+							<th>Dex</td>
+							<td class="tot" id="dex-tot"></td>
+							<td class="mod" id="dex-mod"></th>
+							<td><input name="dex-base" class="dex" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-inherrit" class="dex" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-enhance" class="dex" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-misc" class="dex" onblur="recalcstat('dex')"></input></th>
 						</tr>
 						<tr>
-							<td>Con</td>
-							<td><input name="con-tot" disabled></input></td>
-							<th><input name="con-mod" disabled></input></th>
-							<th><input name="con-base" class="con" onblur="recalcstat('con')"></input></th>
-							<th><input name="con-inherrit" class="con" onblur="recalcstat('con')"></input></th>
-							<th><input name="con-enhance" class="con" onblur="recalcstat('con')"></input></th>
-							<th><input name="con-misc" class="con" onblur="recalcstat('con')"></input></th>
+							<th>Con</td>
+							<td class="tot" id="con-tot"></td>
+							<td class="mod" id="con-mod"></th>
+							<td><input name="con-base" class="con" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-inherrit" class="con" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-enhance" class="con" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-misc" class="con" onblur="recalcstat('con')"></input></th>
 						</tr>
 						<tr>
-							<td>Int</td>
-							<td><input name="int-tot" disabled></input></td>
-							<th><input name="int-mod" disabled></input></th>
-							<th><input name="int-base" class="int" onblur="recalcstat('int')"></input></th>
-							<th><input name="int-inherrit" class="int" onblur="recalcstat('int')"></input></th>
-							<th><input name="int-enhance" class="int onblur="recalcstat('int')""></input></th>
-							<th><input name="int-misc" class="int" onblur="recalcstat('int')"></input></th>
+							<th>Int</td>
+							<td class="tot" id="int-tot"></td>
+							<td class="mod" id="int-mod"></th>
+							<td><input name="int-base" class="int" onblur="recalcstat('int')"></input></th>
+							<td><input name="int-inherrit" class="int" onblur="recalcstat('int')"></input></th>
+							<td><input name="int-enhance" class="int onblur="recalcstat('int')""></input></th>
+							<td><input name="int-misc" class="int" onblur="recalcstat('int')"></input></th>
 						</tr>
 						<tr>
-							<td>Wis</td>
-							<td><input name="wis-tot" disabled></input></td>
-							<th><input name="wis-mod" disabled></input></th>
-							<th><input name="wis-base" class="wis" onblur="recalcstat('wis')"></input></th>
-							<th><input name="wis-inherrit" class="wis" onblur="recalcstat('wis')"></input></th>
-							<th><input name="wis-enhance" class="wis" onblur="recalcstat('wis')"></input></th>
-							<th><input name="wis-misc" class="wis" onblur="recalcstat('wis')"></input></th>
+							<th>Wis</td>
+							<td class="tot" id="wis-tot"></td>
+							<td class="mod" id="wis-mod"></th>
+							<td><input name="wis-base" class="wis" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-inherrit" class="wis" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-enhance" class="wis" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-misc" class="wis" onblur="recalcstat('wis')"></input></th>
 						</tr>
 						<tr>
-							<td>Cha</td>
-							<td><input name="cha-tot" disabled></input></td>
-							<th><input name="cha-mod" disabled></input></th>
-							<th><input name="cha-base" class="cha" onblur="recalcstat('cha')"></input></th>
-							<th><input name="cha-inherrit" class="cha" onblur="recalcstat('cha')"></input></th>
-							<th><input name="cha-enhance" class="cha" onblur="recalcstat('cha')"></input></th>
-							<th><input name="cha-misc" class="cha" onblur="recalcstat('cha')"></input></th>
+							<th>Cha</td>
+							<td class="tot" id="cha-tot"></td>
+							<td class="mod" id="cha-mod"></th>
+							<td><input name="cha-base" class="cha" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-inherrit" class="cha" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-enhance" class="cha" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-misc" class="cha" onblur="recalcstat('cha')"></input></th>
 						</tr>
 					</table>
 				</p>
@@ -161,6 +161,11 @@
 				<p>more test</p>
 			</div>>
 		</div>
+
+		<script type="text/javascript">
+			init();
+			setup();
+		</script>
 
 	</body>
 </html>
