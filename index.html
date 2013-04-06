@@ -15,14 +15,22 @@
 		<h1>Pathfinder Character Sheet</h1>
 
 		<ul id="tabs">
+			<li><a href="#vitals">Vitals</a></li>
 			<li><a href="#character">Character Information</a></li>
-			<li><a href="#attack">Attacks &amp; defence</a></li>
+			<li><a href="#attack">Attacks &amp; Defence</a></li>
 			<li><a href="#skills">Skills</a></li>
 			<li><a href="#feats">Feats, Features &amp; Powers</a></li>
 			<li><a href="#items">Equipment</a></li>
 			<li><a href="#magic">Spells</a></li>
 			<li><a href="#familiar">Familliar</a></li>
 		</ul>
+
+		<div class="tabContent" id="vitals">
+			<h2>Vitals</h2>
+			<div>
+				<p>Reserved for character vitals, all taken from other sheets</p>
+			</div>
+		</div>
 
 		<div class="tabContent" id="character">
 			<h2>Character Information</h2>
@@ -61,55 +69,55 @@
 							<th>Str</th>
 							<td class="tot" id="str-tot"></th>
 							<td class="mod" id="str-mod"></th>
-							<td><input name="str-base" class="str" onblur="recalcstat('str')"></input></th>
-							<td><input name="str-inherrit" class="str" onblur="recalcstat('str')"></input></th>
-							<td><input name="str-enhance" class="str" onblur="recalcstat('str')"></input></th>
-							<td><input name="str-misc" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-base" maxlength="2" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-inherrit" maxlength="2" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-enhance" maxlength="2" class="str" onblur="recalcstat('str')"></input></th>
+							<td><input name="str-misc" maxlength="2" class="str" onblur="recalcstat('str')"></input></th>
 						</tr>
 						<tr>
 							<th>Dex</td>
 							<td class="tot" id="dex-tot"></td>
 							<td class="mod" id="dex-mod"></th>
-							<td><input name="dex-base" class="dex" onblur="recalcstat('dex')"></input></th>
-							<td><input name="dex-inherrit" class="dex" onblur="recalcstat('dex')"></input></th>
-							<td><input name="dex-enhance" class="dex" onblur="recalcstat('dex')"></input></th>
-							<td><input name="dex-misc" class="dex" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-base" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-inherrit" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-enhance" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></th>
+							<td><input name="dex-misc" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></th>
 						</tr>
 						<tr>
 							<th>Con</td>
 							<td class="tot" id="con-tot"></td>
 							<td class="mod" id="con-mod"></th>
-							<td><input name="con-base" class="con" onblur="recalcstat('con')"></input></th>
-							<td><input name="con-inherrit" class="con" onblur="recalcstat('con')"></input></th>
-							<td><input name="con-enhance" class="con" onblur="recalcstat('con')"></input></th>
-							<td><input name="con-misc" class="con" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-base" class="con" maxlength="2" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-inherrit" class="con" maxlength="2" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-enhance" class="con" maxlength="2" onblur="recalcstat('con')"></input></th>
+							<td><input name="con-misc" class="con" maxlength="2" onblur="recalcstat('con')"></input></th>
 						</tr>
 						<tr>
 							<th>Int</td>
 							<td class="tot" id="int-tot"></td>
 							<td class="mod" id="int-mod"></th>
-							<td><input name="int-base" class="int" onblur="recalcstat('int')"></input></th>
-							<td><input name="int-inherrit" class="int" onblur="recalcstat('int')"></input></th>
-							<td><input name="int-enhance" class="int onblur="recalcstat('int')""></input></th>
-							<td><input name="int-misc" class="int" onblur="recalcstat('int')"></input></th>
+							<td><input name="int-base" class="int" maxlength="2" onblur="recalcstat('int')"></input></th>
+							<td><input name="int-inherrit" class="int" maxlength="2" onblur="recalcstat('int')"></input></th>
+							<td><input name="int-enhance" class="int" maxlength="2" onblur="recalcstat('int')"></input></th>
+							<td><input name="int-misc" class="int" maxlength="2" onblur="recalcstat('int')"></input></th>
 						</tr>
 						<tr>
 							<th>Wis</td>
 							<td class="tot" id="wis-tot"></td>
 							<td class="mod" id="wis-mod"></th>
-							<td><input name="wis-base" class="wis" onblur="recalcstat('wis')"></input></th>
-							<td><input name="wis-inherrit" class="wis" onblur="recalcstat('wis')"></input></th>
-							<td><input name="wis-enhance" class="wis" onblur="recalcstat('wis')"></input></th>
-							<td><input name="wis-misc" class="wis" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-base" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-inherrit" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-enhance" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></th>
+							<td><input name="wis-misc" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></th>
 						</tr>
 						<tr>
 							<th>Cha</td>
 							<td class="tot" id="cha-tot"></td>
 							<td class="mod" id="cha-mod"></th>
-							<td><input name="cha-base" class="cha" onblur="recalcstat('cha')"></input></th>
-							<td><input name="cha-inherrit" class="cha" onblur="recalcstat('cha')"></input></th>
-							<td><input name="cha-enhance" class="cha" onblur="recalcstat('cha')"></input></th>
-							<td><input name="cha-misc" class="cha" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-base" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-inherrit" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-enhance" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></th>
+							<td><input name="cha-misc" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></th>
 						</tr>
 					</table>
 				</p>
