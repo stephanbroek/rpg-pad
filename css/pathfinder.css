@@ -5,20 +5,40 @@ input {
 	background-color: #FFF9CE;
 }
 
-input.six {
+input[type=button] {
+	background-color: #F6EDC6
+}
+
+div#player input.six {
 	width:99%;
 }
 
-input.three {
+div#player input.three {
 	width:49.5%;
 }
 
-input.two {
+div#player input.two {
 	width:33%;
 }
 
-input.one {
+div#player input.one {
 	width:16.5%;
+}
+
+div#player input.first {
+	margin-left:5px;
+}
+
+div#player textarea {
+	margin-left: 5px;
+	width:99%;
+	height: 200px;
+	background-color: #FFF9CE;
+
+}
+
+div#char-floatbox {
+	position: relative;
 }
 
 div.stats tr>:first-child {
@@ -50,4 +70,48 @@ div#char-stats input {
 
 div#char-stats .tot, div#char-stats .mod {
 	font-weight: bold;
+}
+
+div#hp {
+	position: absolute;
+	left:430px;
+	top: 18px;
+}
+
+div#hp label{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+div#hp input, div#hp span#cur-hp {
+	width: 50px;
+	margin-left: 5px;
+	display: inline-block;
+	text-align: center;
+}
+
+div#hp span.excelent {
+	color:#00DD01;
+}
+
+div#hp span.normal {
+	color:#009900;
+}
+
+div#hp span.medium {
+	color:#FF6600;
+}
+
+div#hp span.low {
+	color:#FF0000;
+}
+
+div#hp span.crit {
+	color:#000000;
+}
+
+div#hp span.dead {
+	color:#000000;
+	text-decoration: line-through;
 }

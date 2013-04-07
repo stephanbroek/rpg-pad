@@ -2,6 +2,13 @@ body {
 	font-size:80%;
 	font-family:'Lucida Grande', Verdana, Arial, Sans-Serif;
 	background-color: #FAF8DF;
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+ul {
+	min-width: 800px;
 }
 
 ul#tabs {
@@ -38,7 +45,7 @@ div.tabContent {
 	border:1px solid #c9c3ba;
 	background-color:#FFF9CE;
 	padding:.5em;
-	min-width:1000px;
+	min-width: 800px;
 }
 
 div.tabContent.hide {

@@ -16,57 +16,105 @@
 
 		<ul id="tabs">
 			<li><a href="#vitals">Vitals</a></li>
-			<li><a href="#character">Character Information</a></li>
-			<li><a href="#attack">Attacks &amp; Defense</a></li>
+			<li><a href="#character">Character</a></li>
+			<li><a href="#attack">Attack &amp; Defense</a></li>
 			<li><a href="#skills">Skills</a></li>
-			<li><a href="#feats">Feats, Features &amp; Powers</a></li>
-			<li><a href="#items">Equipment</a></li>
-			<li><a href="#magic">Spells</a></li>
-			<li><a href="#familiar">Familliar</a></li>
+			<li><a href="#traits">Racial Traits</a></li>
+			<li><a href="#features">Class Features</a></li>
+			<li><a href="#feats">Feats</a></li>
+			<li><a href="#abilities">Specail Abilities</a></li>
+			<li><a href="#items">Magical Items</a></li>
+			<li><a href="#gear">Gear</a></li>
+			<li><a href="#spells">Spells</a></li>
+			<li><a href="#familiar">Animal Companion/Familiar</a></li>
+			<li><a href="#notes">Notes</a></li>
 		</ul>
 
 		<div class="tabContent" id="vitals">
 			<h2>Vitals</h2>
 			<div class="stats" id="vit-stats">
 				<p>Reserved for character vitals, all taken from other sheets.</p>
+				<div id="char-floatbox">
+					<div class="stats" id="char-stats">
+						<p>
+							<table>
+								<tr>
+									<th></th>
+									<th>Tot</th>
+									<th>Mod</th>
+									<th>Base</th>
+									<th>Inherent</th>
+									<th>Enhance</th>
+									<th>Misc</th>
+								</tr>
+								<tr>
+									<th>Str</th>
+									<td class="tot" id="str-tot"></td>
+									<td class="mod" id="str-mod"></td>
+									<td><input name="str-base" maxlength="2" class="str" onblur="stat('str')"></input></td>
+									<td><input name="str-inherrit" maxlength="2" class="str" onblur="stat('str')"></input></td>
+									<td><input name="str-enhance" maxlength="2" class="str" onblur="stat('str')"></input></td>
+									<td><input name="str-misc" maxlength="2" class="str" onblur="stat('str')"></input></td>
+								</tr>
+								<tr>
+									<th>Dex</th>
+									<td class="tot" id="dex-tot"></td>
+									<td class="mod" id="dex-mod"></td>
+									<td><input name="dex-base" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
+									<td><input name="dex-inherrit" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
+									<td><input name="dex-enhance" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
+									<td><input name="dex-misc" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
+								</tr>
+								<tr>
+									<th>Con</th>
+									<td class="tot" id="con-tot"></td>
+									<td class="mod" id="con-mod"></td>
+									<td><input name="con-base" class="con" maxlength="2" onblur="stat('con')"></input></td>
+									<td><input name="con-inherrit" class="con" maxlength="2" onblur="stat('con')"></input></td>
+									<td><input name="con-enhance" class="con" maxlength="2" onblur="stat('con')"></input></td>
+									<td><input name="con-misc" class="con" maxlength="2" onblur="stat('con')"></input></td>
+								</tr>
+								<tr>
+									<th>Int</th>
+									<td class="tot" id="int-tot"></td>
+									<td class="mod" id="int-mod"></td>
+									<td><input name="int-base" class="int" maxlength="2" onblur="stat('int')"></input></td>
+									<td><input name="int-inherrit" class="int" maxlength="2" onblur="stat('int')"></input></td>
+									<td><input name="int-enhance" class="int" maxlength="2" onblur="stat('int')"></input></td>
+									<td><input name="int-misc" class="int" maxlength="2" onblur="stat('int')"></input></td>
+								</tr>
+								<tr>
+									<th>Wis</th>
+									<td class="tot" id="wis-tot"></td>
+									<td class="mod" id="wis-mod"></td>
+									<td><input name="wis-base" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
+									<td><input name="wis-inherrit" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
+									<td><input name="wis-enhance" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
+									<td><input name="wis-misc" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
+								</tr>
+								<tr>
+									<th>Cha</th>
+									<td class="tot" id="cha-tot"></td>
+									<td class="mod" id="cha-mod"></td>
+									<td><input name="cha-base" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
+									<td><input name="cha-inherrit" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
+									<td><input name="cha-enhance" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
+									<td><input name="cha-misc" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
+								</tr>
+							</table>
+						</p>
+					</div>
 
-				<table>
-						<tr>
-							<th></th>
-							<th>Tot</th>
-							<th>Mod</th>
-						</tr>
-						<tr>
-							<th>Str</th>
-							<td class="tot" id="vit-str-tot"></td>
-							<td class="mod" id="vit-str-mod"></td>
-						</tr>
-						<tr>
-							<th>Dex</th>
-							<td class="tot" id="vit-dex-tot"></td>
-							<td class="mod" id="vit-dex-mod"></td>
-						</tr>
-						<tr>
-							<th>Con</th>
-							<td class="tot" id="vit-con-tot"></td>
-							<td class="mod" id="vit-con-mod"></td>
-						</tr>
-						<tr>
-							<th>Int</th>
-							<td class="tot" id="vit-int-tot"></td>
-							<td class="mod" id="vit-int-mod"></td>
-						</tr>
-						<tr>
-							<th>Wis</th>
-							<td class="tot" id="vit-wis-tot"></td>
-							<td class="mod" id="vit-wis-mod"></td>
-						</tr>
-						<tr>
-							<th>Cha</th>
-							<td class="tot" id="vit-cha-tot"></td>
-							<td class="mod" id="vit-cha-mod"></td>
-						</tr>
-					</table>
+					<div id='hp'>
+						<form action="#" onsubmit="health()">
+							<label>Max HP: </label><input id="max-hp" maxlength="4"></input><br />
+							<label>HP change: </label><input id="change-hp" maxlength="4"></input><br />
+							<label>Current HP: </label><input type="hidden" id="offset-hp"></input><span id="cur-hp"></span>
+							<input type="submit" name="calc" value="Calc" onclick="health()"></input>
+						</form>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 
@@ -74,138 +122,103 @@
 			<h2>Character Information</h2>
 			<div id="player">
 				<p>
-				<input name="character" placeholder="Character" class='three'></input>
+				<input name="character" placeholder="Character" class='three first'></input>
 				<input name="player" placeholder="Player" class='three'></input>
 				<br>
-				<input name="race" placeholder="Race &amp; LA" class='two'></input>
+				<input name="race" placeholder="Race &amp; LA" class='two first'></input>
 				<input name="size" placeholder="Size" class='one'></input>
 				<input name="gender" placeholder="Gender" class='one'></input>
 				<input name="height" placeholder="Height" class='one'></input>
 				<input name="weight" placeholder="Weight" class='one'></input>
 				<br>
-				<input name="age" placeholder="Age" class='one'></input>
+				<input name="age" placeholder="Age" class='one first'></input>
 				<input name="alignment" placeholder="Alignment" class='one'></input>
 				<input name="deity" placeholder="Deity" class='two'></input>
 				<input name="background" placeholder="Background Occupation" class='two'></input>
 				<br>
-				<input name="languages" placeholder="languages" class='six'></input>
+				<input name="languages" placeholder="languages" class='six first'></input>
 				</p>
+				<h3>Background</h3>
+				<textarea></textarea>
 			</div>
-			<div class="stats" id="char-stats">
-				<p>
-					<table>
-						<tr>
-							<th></th>
-							<th>Tot</th>
-							<th>Mod</th>
-							<th>Base</th>
-							<th>Inherent</th>
-							<th>Enhance</th>
-							<th>Misc</th>
-						</tr>
-						<tr>
-							<th>Str</th>
-							<td class="tot" id="str-tot"></td>
-							<td class="mod" id="str-mod"></td>
-							<td><input name="str-base" maxlength="2" class="str" onblur="recalcstat('str')"></input></td>
-							<td><input name="str-inherrit" maxlength="2" class="str" onblur="recalcstat('str')"></input></td>
-							<td><input name="str-enhance" maxlength="2" class="str" onblur="recalcstat('str')"></input></td>
-							<td><input name="str-misc" maxlength="2" class="str" onblur="recalcstat('str')"></input></td>
-						</tr>
-						<tr>
-							<th>Dex</th>
-							<td class="tot" id="dex-tot"></td>
-							<td class="mod" id="dex-mod"></td>
-							<td><input name="dex-base" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></td>
-							<td><input name="dex-inherrit" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></td>
-							<td><input name="dex-enhance" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></td>
-							<td><input name="dex-misc" class="dex" maxlength="2" onblur="recalcstat('dex')"></input></td>
-						</tr>
-						<tr>
-							<th>Con</th>
-							<td class="tot" id="con-tot"></td>
-							<td class="mod" id="con-mod"></td>
-							<td><input name="con-base" class="con" maxlength="2" onblur="recalcstat('con')"></input></td>
-							<td><input name="con-inherrit" class="con" maxlength="2" onblur="recalcstat('con')"></input></td>
-							<td><input name="con-enhance" class="con" maxlength="2" onblur="recalcstat('con')"></input></td>
-							<td><input name="con-misc" class="con" maxlength="2" onblur="recalcstat('con')"></input></td>
-						</tr>
-						<tr>
-							<th>Int</th>
-							<td class="tot" id="int-tot"></td>
-							<td class="mod" id="int-mod"></td>
-							<td><input name="int-base" class="int" maxlength="2" onblur="recalcstat('int')"></input></td>
-							<td><input name="int-inherrit" class="int" maxlength="2" onblur="recalcstat('int')"></input></td>
-							<td><input name="int-enhance" class="int" maxlength="2" onblur="recalcstat('int')"></input></td>
-							<td><input name="int-misc" class="int" maxlength="2" onblur="recalcstat('int')"></input></td>
-						</tr>
-						<tr>
-							<th>Wis</th>
-							<td class="tot" id="wis-tot"></td>
-							<td class="mod" id="wis-mod"></td>
-							<td><input name="wis-base" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></td>
-							<td><input name="wis-inherrit" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></td>
-							<td><input name="wis-enhance" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></td>
-							<td><input name="wis-misc" class="wis" maxlength="2" onblur="recalcstat('wis')"></input></td>
-						</tr>
-						<tr>
-							<th>Cha</th>
-							<td class="tot" id="cha-tot"></td>
-							<td class="mod" id="cha-mod"></td>
-							<td><input name="cha-base" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></td>
-							<td><input name="cha-inherrit" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></td>
-							<td><input name="cha-enhance" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></td>
-							<td><input name="cha-misc" class="cha" maxlength="2" onblur="recalcstat('cha')"></input></td>
-						</tr>
-					</table>
-				</p>
-			</div>
-
-			<div id='class'>
-
-			</div>
+			
 		</div>
 
 		<div class="tabContent" id="attack">
-			<h2>Attacks &amp; defence</h2>
+			<h2>Attack &amp; defence</h2>
 			<div>
 				<p>more test</p>
 			</div>
 		</div>
 
 		<div class="tabContent" id="skills">
-			<h2>Attacks &amp; defence</h2>
+			<h2>Skills</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
+
+		<div class="tabContent" id="traits">
+			<h2>Racial Traits</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
+
+		<div class="tabContent" id="features">
+			<h2>Class Features</h2>
 			<div>
 				<p>more test</p>
 			</div>
 		</div>
 
 		<div class="tabContent" id="feats">
-			<h2>Attacks &amp; defence</h2>
+			<h2>Feats</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
+
+		<div class="tabContent" id="abilities">
+			<h2>Special Abilities</h2>
 			<div>
 				<p>more test</p>
 			</div>
 		</div>
 
 		<div class="tabContent" id="items">
-			<h2>Attacks &amp; defence</h2>
+			<h2>Magical Items</h2>
+			<div>
+				<p>more test</p>
+			</div>
+		</div>
+
+		<div class="tabContent" id="gear">
+			<h2>Gear</h2>
 			<div>
 				<p>more test</p>
 			</div>
 		</div>
 		
-		<div class="tabContent" id="magic">
-			<h2>Attacks &amp; defence</h2>
+		<div class="tabContent" id="spells">
+			<h2>Spells</h2>
 			<div>
 				<p>more test</p>
 			</div>
 		</div>
 
 		<div class="tabContent" id="familiar">
-			<h2>Attacks &amp; defence</h2>
+			<h2>Familiar</h2>
 			<div>
 				<p>more test</p>
-			</div>>
+			</div>
+		</div>
+
+		<div class="tabContent" id="notes">
+			<h2>Notes</h2>
+			<div>
+				<p>more test</p>
+			</div>
 		</div>
 
 		<script type="text/javascript">
