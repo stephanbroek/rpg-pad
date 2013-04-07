@@ -9,7 +9,9 @@ function recalcstat(stat)
 	})
 	mod=Math.floor((sum-10)/2);
 	$('#' + stat + '-tot').html(sum);
+	$('#vit-' + stat + '-tot').html(sum);
 	$('#' + stat + '-mod').html((mod>=0 ? "+" : "") + mod);
+	$('#vit-' + stat + '-mod').html((mod>=0 ? "+" : "") + mod);
 }
 
 function setup()
