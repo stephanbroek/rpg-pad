@@ -4,6 +4,7 @@
 
 		<title>Pathfinder Character sheet</title>
 
+		<link href="css/normalize.css" rel="stylesheet" />
 		<link href="css/tabs.css" rel="stylesheet" />
 		<link href="css/pathfinder.css" rel="stylesheet" />
 
@@ -12,219 +13,344 @@
 		<script src="js/pathfinder.js" type="text/javascript"></script>
 	</head>
 	<body>
-		<h1>Pathfinder Character Sheet</h1>
+		<div id="content">
+			<ul id="tabs">
+				<li><a href="#vitals">Vitals</a></li>
+				<li><a href="#character">Character</a></li>
+				<li><a href="#attack">Attack &amp; Defense</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#traits">Racial Traits</a></li>
+				<li><a href="#features">Class Features</a></li>
+				<li><a href="#feats">Feats</a></li>
+				<li><a href="#abilities">Special Abilities</a></li>
+				<li><a href="#items">Magical Items</a></li>
+				<li><a href="#gear">Gear</a></li>
+				<li><a href="#spells">Spells</a></li>
+				<li><a href="#familiar">Animal Companion/Familiar</a></li>
+				<li><a href="#notes">Notes</a></li>
+			</ul>
 
-		<ul id="tabs">
-			<li><a href="#vitals">Vitals</a></li>
-			<li><a href="#character">Character</a></li>
-			<li><a href="#attack">Attack &amp; Defense</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#traits">Racial Traits</a></li>
-			<li><a href="#features">Class Features</a></li>
-			<li><a href="#feats">Feats</a></li>
-			<li><a href="#abilities">Special Abilities</a></li>
-			<li><a href="#items">Magical Items</a></li>
-			<li><a href="#gear">Gear</a></li>
-			<li><a href="#spells">Spells</a></li>
-			<li><a href="#familiar">Animal Companion/Familiar</a></li>
-			<li><a href="#notes">Notes</a></li>
-		</ul>
+			<div class="tabContent" id="vitals">
+				<h2>Vitals</h2>
+				<div class="stats" id="vit-stats">
+					<p>Reserved for character vitals, all taken from other sheets.</p>
+					<div id="fb-stats" class="floatbox">
+						<div class="stats" id="char-stats">
+							<p>
+								<table>
+									<tr>
+										<th></th>
+										<th>Tot</th>
+										<th>Mod</th>
+										<th>Base</th>
+										<th>Inherent</th>
+										<th>Enhance</th>
+										<th>Misc</th>
+									</tr>
+									<tr>
+										<th>Str</th>
+										<td class="tot" id="str-tot"></td>
+										<td class="mod" id="str-mod"></td>
+										<td><input id="str-base" maxlength="2" class="str"></input></td>
+										<td><input id="str-inherrit" maxlength="3" class="str"></input></td>
+										<td><input id="str-enhance" maxlength="3" class="str"></input></td>
+										<td><input id="str-misc" maxlength="3" class="str"></input></td>
+									</tr>
+									<tr>
+										<th>Dex</th>
+										<td class="tot" id="dex-tot"></td>
+										<td class="mod" id="dex-mod"></td>
+										<td><input id="dex-base" class="dex" maxlength="2"></input></td>
+										<td><input id="dex-inherrit" class="dex" maxlength="3"></input></td>
+										<td><input id="dex-enhance" class="dex" maxlength="3"></input></td>
+										<td><input id="dex-misc" class="dex" maxlength="3"></input></td>
+									</tr>
+									<tr>
+										<th>Con</th>
+										<td class="tot" id="con-tot"></td>
+										<td class="mod" id="con-mod"></td>
+										<td><input id="con-base" class="con" maxlength="2"></input></td>
+										<td><input id="con-inherrit" class="con" maxlength="3"></input></td>
+										<td><input id="con-enhance" class="con" maxlength="3"></input></td>
+										<td><input id="con-misc" class="con" maxlength="3"></input></td>
+									</tr>
+									<tr>
+										<th>Int</th>
+										<td class="tot" id="int-tot"></td>
+										<td class="mod" id="int-mod"></td>
+										<td><input id="int-base" class="int" maxlength="2"></input></td>
+										<td><input id="int-inherrit" class="int" maxlength="3"></input></td>
+										<td><input id="int-enhance" class="int" maxlength="3"></input></td>
+										<td><input id="int-misc" class="int" maxlength="3"></input></td>
+									</tr>
+									<tr>
+										<th>Wis</th>
+										<td class="tot" id="wis-tot"></td>
+										<td class="mod" id="wis-mod"></td>
+										<td><input id="wis-base" class="wis" maxlength="2"></input></td>
+										<td><input id="wis-inherrit" class="wis" maxlength="3"></input></td>
+										<td><input id="wis-enhance" class="wis" maxlength="3"></input></td>
+										<td><input id="wis-misc" class="wis" maxlength="3"></input></td>
+									</tr>
+									<tr>
+										<th>Cha</th>
+										<td class="tot" id="cha-tot"></td>
+										<td class="mod" id="cha-mod"></td>
+										<td><input id="cha-base" class="cha" maxlength="2"></input></td>
+										<td><input id="cha-inherrit" class="cha" maxlength="3"></input></td>
+										<td><input id="cha-enhance" class="cha" maxlength="3"></input></td>
+										<td><input id="cha-misc" class="cha" maxlength="3"></input></td>
+									</tr>
+								</table>
+							</p>
+						</div>
 
-		<div class="tabContent" id="vitals">
-			<h2>Vitals</h2>
-			<div class="stats" id="vit-stats">
-				<p>Reserved for character vitals, all taken from other sheets.</p>
-				<div id="char-floatbox">
-					<div class="stats" id="char-stats">
-						<p>
+						<div id='hp'>
+							<form action="#" onsubmit="health()">
+								<label>Max HP: </label><input id="max-hp" maxlength="4"></input><br />
+								<label>HP change: </label><input id="change-hp" maxlength="4"></input><input type="button" id="reset" value="Full" onclick="resethealth()"></input><br />
+								<label>Current HP: </label><input type="hidden" id="offset-hp"></input><span id="cur-hp"></span>
+								<input type="submit" id="calc" value="Calc"></input>
+							</form>
+						</div>
+					</div>
+
+					<div id="fb-class" class="floatbox">
+						<div id="rolls">	
 							<table>
 								<tr>
-									<th></th>
-									<th>Tot</th>
-									<th>Mod</th>
-									<th>Base</th>
-									<th>Inherent</th>
-									<th>Enhance</th>
-									<th>Misc</th>
+									<th>AC</th>
+									<td>0</td>
 								</tr>
 								<tr>
-									<th>Str</th>
-									<td class="tot" id="str-tot"></td>
-									<td class="mod" id="str-mod"></td>
-									<td><input name="str-base" maxlength="2" class="str" onblur="stat('str')"></input></td>
-									<td><input name="str-inherrit" maxlength="2" class="str" onblur="stat('str')"></input></td>
-									<td><input name="str-enhance" maxlength="2" class="str" onblur="stat('str')"></input></td>
-									<td><input name="str-misc" maxlength="2" class="str" onblur="stat('str')"></input></td>
+									<th>Touch</th>
+									<td>0</td>
 								</tr>
 								<tr>
-									<th>Dex</th>
-									<td class="tot" id="dex-tot"></td>
-									<td class="mod" id="dex-mod"></td>
-									<td><input name="dex-base" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
-									<td><input name="dex-inherrit" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
-									<td><input name="dex-enhance" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
-									<td><input name="dex-misc" class="dex" maxlength="2" onblur="stat('dex')"></input></td>
-								</tr>
-								<tr>
-									<th>Con</th>
-									<td class="tot" id="con-tot"></td>
-									<td class="mod" id="con-mod"></td>
-									<td><input name="con-base" class="con" maxlength="2" onblur="stat('con')"></input></td>
-									<td><input name="con-inherrit" class="con" maxlength="2" onblur="stat('con')"></input></td>
-									<td><input name="con-enhance" class="con" maxlength="2" onblur="stat('con')"></input></td>
-									<td><input name="con-misc" class="con" maxlength="2" onblur="stat('con')"></input></td>
-								</tr>
-								<tr>
-									<th>Int</th>
-									<td class="tot" id="int-tot"></td>
-									<td class="mod" id="int-mod"></td>
-									<td><input name="int-base" class="int" maxlength="2" onblur="stat('int')"></input></td>
-									<td><input name="int-inherrit" class="int" maxlength="2" onblur="stat('int')"></input></td>
-									<td><input name="int-enhance" class="int" maxlength="2" onblur="stat('int')"></input></td>
-									<td><input name="int-misc" class="int" maxlength="2" onblur="stat('int')"></input></td>
-								</tr>
-								<tr>
-									<th>Wis</th>
-									<td class="tot" id="wis-tot"></td>
-									<td class="mod" id="wis-mod"></td>
-									<td><input name="wis-base" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
-									<td><input name="wis-inherrit" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
-									<td><input name="wis-enhance" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
-									<td><input name="wis-misc" class="wis" maxlength="2" onblur="stat('wis')"></input></td>
-								</tr>
-								<tr>
-									<th>Cha</th>
-									<td class="tot" id="cha-tot"></td>
-									<td class="mod" id="cha-mod"></td>
-									<td><input name="cha-base" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
-									<td><input name="cha-inherrit" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
-									<td><input name="cha-enhance" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
-									<td><input name="cha-misc" class="cha" maxlength="2" onblur="stat('cha')"></input></td>
+									<th>Flat-Foot</th>
+									<td>0</td>
 								</tr>
 							</table>
-						</p>
-					</div>
 
-					<div id='hp'>
-						<form action="#" onsubmit="health()">
-							<label>Max HP: </label><input id="max-hp" maxlength="4"></input><br />
-							<label>HP change: </label><input id="change-hp" maxlength="4"></input><br />
-							<label>Current HP: </label><input type="hidden" id="offset-hp"></input><span id="cur-hp"></span>
-							<input type="submit" name="calc" value="Calc" onclick="health()"></input>
-						</form>
+							<table>
+								<tr>
+									<th>Fort</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th>Ref</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th>Will</th>
+									<td>0</td>
+								</tr>
+							</table>
+
+							<table>
+								<tr>
+									<th>Melee</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th>Ranged</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th>CMB</th>
+									<td>0</td>
+								</tr>
+								<tr>
+									<th>CMD</th>
+									<td>0</td>
+								</tr>
+							</table>
+						</div>
+						<div id="class">
+							<table>
+								<tr>
+									<th>hd</th>
+									<th id="name">class name</th>
+									<th>bab</th>
+									<th>skills</th>
+									<th>fort</th>
+									<th>ref</th>
+									<th>will</th>
+									<th>levels</th>
+								</tr>
+								<tr>
+									<td><input></input></td>
+									<td id="name"><input></input></td>
+									<td><input class="cls-bab"></input></td>
+									<td><input class="cls-skls"></input></td>
+									<td><input class="cls-fort"></input></td>
+									<td><input class="cls-ref"></input></td>
+									<td><input class="cls-will"></input></td>
+									<td><input class="cls-lvls"></input></td>
+								</tr>
+								<tr>
+									<td><input></input></td>
+									<td id="name"><input></input></td>
+									<td><input class="cls-bab"></input></td>
+									<td><input class="cls-skls"></input></td>
+									<td><input class="cls-fort"></input></td>
+									<td><input class="cls-ref"></input></td>
+									<td><input class="cls-will"></input></td>
+									<td><input class="cls-lvls"></input></td>
+								</tr>
+								<tr>
+									<td><input></input></td>
+									<td id="name"><input></input></td>
+									<td><input class="cls-bab"></input></td>
+									<td><input class="cls-skls"></input></td>
+									<td><input class="cls-fort"></input></td>
+									<td><input class="cls-ref"></input></td>
+									<td><input class="cls-will"></input></td>
+									<td><input class="cls-lvls"></input></td>
+								</tr>
+								<tr>
+									<td><input></input></td>
+									<td id="name"><input></input></td>
+									<td><input class="cls-bab"></input></td>
+									<td><input class="cls-skls"></input></td>
+									<td><input class="cls-fort"></input></td>
+									<td><input class="cls-ref"></input></td>
+									<td><input class="cls-will"></input></td>
+									<td><input class="cls-lvls"></input></td>
+								</tr>
+								<tr>
+									<td><input></input></td>
+									<td id="name"><input></input></td>
+									<td><input class="cls-bab"></input></td>
+									<td><input class="cls-skls"></input></td>
+									<td><input class="cls-fort"></input></td>
+									<td><input class="cls-ref"></input></td>
+									<td><input class="cls-will"></input></td>
+									<td><input class="cls-lvls"></input></td>
+								</tr>
+								<tr>
+									<td id="favored" colspan="2">Favored Class: <input></input> Totals:</td>
+									<td id="cls-tot-bab" class="cls-tot"></td>
+									<td id="cls-tot-skls" class="cls-tot"></td>
+									<td id="cls-tot-fort" class="cls-tot"></td>
+									<td id="cls-tot-ref" class="cls-tot"></td>
+									<td id="cls-tot-will" class="cls-tot"></td>
+									<td id="cls-tot-lvls" class="cls-tot"></td>
+								</tr>
+							</table>
+						</div>
 					</div>
+					
+				</div>
+			</div>
+
+			<div class="tabContent" id="character">
+				<h2>Character Information</h2>
+				<div id="player">
+					<p>
+					<input name="character" placeholder="Character" class='three first'></input>
+					<input name="player" placeholder="Player" class='three'></input>
+					<br>
+					<input name="race" placeholder="Race &amp; LA" class='two first'></input>
+					<input name="size" placeholder="Size" class='one'></input>
+					<input name="gender" placeholder="Gender" class='one'></input>
+					<input name="height" placeholder="Height" class='one'></input>
+					<input name="weight" placeholder="Weight" class='one'></input>
+					<br>
+					<input name="age" placeholder="Age" class='one first'></input>
+					<input name="alignment" placeholder="Alignment" class='one'></input>
+					<input name="deity" placeholder="Deity" class='two'></input>
+					<input name="background" placeholder="Background Occupation" class='two'></input>
+					<br>
+					<input name="languages" placeholder="languages" class='six first'></input>
+					</p>
+					<h3>Background</h3>
+					<textarea></textarea>
 				</div>
 				
 			</div>
-		</div>
 
-		<div class="tabContent" id="character">
-			<h2>Character Information</h2>
-			<div id="player">
-				<p>
-				<input name="character" placeholder="Character" class='three first'></input>
-				<input name="player" placeholder="Player" class='three'></input>
-				<br>
-				<input name="race" placeholder="Race &amp; LA" class='two first'></input>
-				<input name="size" placeholder="Size" class='one'></input>
-				<input name="gender" placeholder="Gender" class='one'></input>
-				<input name="height" placeholder="Height" class='one'></input>
-				<input name="weight" placeholder="Weight" class='one'></input>
-				<br>
-				<input name="age" placeholder="Age" class='one first'></input>
-				<input name="alignment" placeholder="Alignment" class='one'></input>
-				<input name="deity" placeholder="Deity" class='two'></input>
-				<input name="background" placeholder="Background Occupation" class='two'></input>
-				<br>
-				<input name="languages" placeholder="languages" class='six first'></input>
-				</p>
-				<h3>Background</h3>
-				<textarea></textarea>
+			<div class="tabContent" id="attack">
+				<h2>Attack &amp; defence</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="skills">
+				<h2>Skills</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="traits">
+				<h2>Racial Traits</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="features">
+				<h2>Class Features</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="feats">
+				<h2>Feats</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="abilities">
+				<h2>Special Abilities</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="items">
+				<h2>Magical Items</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="gear">
+				<h2>Gear</h2>
+				<div>
+					<p>more test</p>
+				</div>
 			</div>
 			
-		</div>
+			<div class="tabContent" id="spells">
+				<h2>Spells</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
 
-		<div class="tabContent" id="attack">
-			<h2>Attack &amp; defence</h2>
-			<div>
-				<p>more test</p>
+			<div class="tabContent" id="familiar">
+				<h2>Familiar</h2>
+				<div>
+					<p>more test</p>
+				</div>
+			</div>
+
+			<div class="tabContent" id="notes">
+				<h2>Notes</h2>
+				<div>
+					<p>more test</p>
+				</div>
 			</div>
 		</div>
 
-		<div class="tabContent" id="skills">
-			<h2>Skills</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="traits">
-			<h2>Racial Traits</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="features">
-			<h2>Class Features</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="feats">
-			<h2>Feats</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="abilities">
-			<h2>Special Abilities</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="items">
-			<h2>Magical Items</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="gear">
-			<h2>Gear</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-		
-		<div class="tabContent" id="spells">
-			<h2>Spells</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="familiar">
-			<h2>Familiar</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<div class="tabContent" id="notes">
-			<h2>Notes</h2>
-			<div>
-				<p>more test</p>
-			</div>
-		</div>
-
-		<script type="text/javascript">
-			init();
-			setup();
-		</script>
-
+			<script type="text/javascript">
+				init();
+				setup();
+			</script>
 	</body>
 </html>

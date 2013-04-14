@@ -1,15 +1,26 @@
-function stat(stat)
+function updateStat(stat)
 {
-	var sum=0;
-	$("."+ stat).each(function(){
+	var sum = 0;
+	$("." + stat).each(function() {
 		val = parseInt($(this).val(),10);
 		if(!isNaN(val))
-			sum+=val;	
+			sum += val;	
 		
-	})
+	});
 	mod=Math.floor((sum-10)/2);
 	$('#' + stat + '-tot').html(sum);
 	$('#' + stat + '-mod').html((mod>=0 ? "+" : "") + mod);
+}
+
+function updateClass(cls)
+{
+	var sum = 0;
+	$(".cls-" + cls).each(function() {
+		val = parseInt($(this).val(),10);
+		if(!isNaN(val))
+			sum += val;
+	});
+	$("#cls-tot-" + cls).html(sum);
 }
 
 function health()
@@ -49,13 +60,32 @@ function health()
 	return false;
 }
 
+function resethealth() {
+	$("#offset-hp").val(0);
+	health();
+}
+
 function setup()
 {
-	stat("str");
-	stat("dex");
-	stat("con");
-	stat("int");
-	stat("wis");
-	stat("cha");
+	var stats = ["str", "dex", "con", "int", "wis", "cha"];
+	$.each(stats, function(key, val) {
+		$("." + val).each(function() {
+			$(this).on('blur', function() {
+				updateStat(val);
+			});
+		});	
+		updateStat(val);
+	});
+	$('.con').on('blur', function() {
+		health();
+	});
 	health();
+	var classes = ["bab", "skls", "fort", "ref", "will", "lvls"];
+	$.each(classes, function(key, val) {
+		$(".cls-" + val).each(function() {
+			$(this).on('blur', function() {
+				updateClass(val);
+			});
+		});
+	});
 }

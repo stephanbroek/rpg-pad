@@ -1,12 +1,15 @@
 input {
-	margin: 0 -4px;
 	border-top:0;
 	border-right:0;
 	background-color: #FFF9CE;
 }
 
-input[type=button] {
+input[type=button], input[type=submit] {
 	background-color: #F6EDC6
+}
+
+div#player input {
+	margin: 0 -4px;
 }
 
 div#player input.six {
@@ -37,34 +40,37 @@ div#player textarea {
 
 }
 
-div#char-floatbox {
+div.floatbox {
 	position: relative;
 }
 
-div.stats tr>:first-child {
-	width: 50px;
-	text-align: left;
+div#fb-stats {
+	width: 600px;
 }
 
-div.stats tr:first-child{
+div#char-stats tr>:first-child {
+	width: 65px;
+}
+
+div#char-stats tr:first-child{
 	font-weight: 400;
 	font-size: 67%;
 }
 
-div.stats .tot, div.stats .mod {
+div#char-stats .tot, div#char-stats .mod {
 	text-align: center;
 }
 
-div.stats .tot {
+div#char-stats .tot {
 	width:40px;
 }
 
-div.stats .mod {
+div#char-stats .mod {
 	width:60px;
 }
 
 div#char-stats input {
-	width:60px;
+	width:50px;
 	text-align: center;
 }
 
@@ -74,8 +80,8 @@ div#char-stats .tot, div#char-stats .mod {
 
 div#hp {
 	position: absolute;
-	left:430px;
-	top: 18px;
+	right:0px;
+	top: 19px;
 }
 
 div#hp label{
@@ -89,6 +95,10 @@ div#hp input, div#hp span#cur-hp {
 	margin-left: 5px;
 	display: inline-block;
 	text-align: center;
+}
+
+div#hp input {
+	margin-right: 3px;
 }
 
 div#hp span.excelent {
@@ -114,4 +124,70 @@ div#hp span.crit {
 div#hp span.dead {
 	color:#000000;
 	text-decoration: line-through;
+}
+
+div#rolls tr>:first-child {
+	width:65px;
+}
+
+div#rolls table {
+	margin-top: 20px;
+}
+
+div#rolls table:first-child {
+	margin-top: 0;	
+}
+
+div#rolls table td {
+	text-align: center;
+	width: 40px;
+	font-weight: bold;
+}
+
+div#fb-class {
+	width: 680px;
+}
+
+div#class input {
+	width:38px;
+	margin: 0;
+}
+
+div#class td#name input {
+	width: 248px;
+}
+
+div#class td#favored input {
+	width: 128px;
+	font-weight: bold;
+}
+
+div#class td {
+	text-align: center;
+}
+
+div#class td input {
+	text-align: center;
+}
+
+div#class td.cls-tot {
+	font-weight: bold;
+}
+
+div#class tr>:last-child input{
+	border-left-color: #000;
+}
+
+div#class th {
+	width: 40px;
+}
+
+div#class th#name {
+	width: 250px;
+}
+
+div#class table {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
