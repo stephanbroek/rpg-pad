@@ -1,4 +1,5 @@
 TODO
 =====
 
-- ~~character information field with align on scaling~~ (hidden)
+- redesign input fields
+- ~~character information field with align on scaling~~ (fixed)

@@ -86,6 +86,7 @@ function setup()
 			$(this).on('blur', function() {
 				updateClass(val);
 			});
+			updateClass(val);
 		});
 	});
 }

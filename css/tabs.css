@@ -44,12 +44,16 @@ ul#tabs li a.selected {
 div.tabContent {
 	border:1px solid #c9c3ba;
 	background-color:#FFF9CE;
-	padding:.5em;
+	padding:15px;
 	min-width: 800px;
 }
 
 div.tabContent.hide {
 	display:none;
+}
+
+div.tabContent h2 {
+	margin: 0;
 }
 
 div#content {
