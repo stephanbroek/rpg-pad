@@ -151,6 +151,7 @@ div#rolls table td {
 
 div#fb-class {
 	width: 680px;
+	height: 250px;
 }
 
 div#class input {
@@ -198,6 +199,27 @@ div#class table {
 	right: 0;
 }
 
+div#misc table {
+	position: absolute;
+	top:150px;
+	left: 134px;
+}
+
+div#misc th {
+	width: 60px;
+}
+
+div#misc th input{
+	font-weight: bold;
+	color: #000;
+}
+
+div#misc input {
+	width: 55px;
+	text-align: center;
+}
+
+
 div#skls th {
 	width: 40px;
 	font-size: 67%;
@@ -242,5 +264,21 @@ div#skls input.kn-box {
 }
 
 div#skls input.name {
-	width: 192px;
+	width: 187px;
+}
+
+div#skls td, div #skls td input {
+	text-align: center;
+}
+
+div#skls td:first-child {
+	text-align: left;
+}
+
+div#skls td.tot {
+	font-weight: bold;
+}
+
+td, th {
+	//background: -moz-linear-gradient(-80deg, #0F0 0%, #F00 100%, #F00 50%);
 }
