@@ -282,3 +282,11 @@ div#skls td.tot {
 td, th {
 	//background: -moz-linear-gradient(-80deg, #0F0 0%, #F00 100%, #F00 50%);
 }
+
+textarea {
+	margin: 5px 0;
+	width:99%;
+	height: 500px;
+	background-color: #FFF9CE;
+
+}
