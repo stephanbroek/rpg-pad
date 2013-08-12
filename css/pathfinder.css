@@ -260,17 +260,13 @@ div#skls select {
 	line-height: 1;
 	border-width: 0;
 	border-radius: 0;
-	height: 15px;
+	height: 17.5px;
 	font-size: 80%;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box; /* Firefox */
-	border-color: #888;
 }
 
-div#skls div.stat {
-	float:right;
-	border-width: 0 0 1px 2px;
-	border-color:#000;
+div#skls span.cust {
+	border-bottom: 1px solid #888;
+	border-left: 2px solid #9A9A9A;
 }
 
 div#skls input.cft-box {
