@@ -50,8 +50,6 @@ function updateSkill(skill)
 	}
 	$("div#skls tr#" + skill + " td.trn").html(trained);
 
-	console.log(parseInt($("div#skills span#pen").val(), 10));
-
 	var pen = $("div#skls tr#" + skill).hasClass("pen") ? parseInt($("div#skills span#pen").html(), 10) : 0;
 
 	var tot = !($("div#skls tr#" + skill).hasClass("trn") && rank == 0) ? rank + abl + trained + msc + pen : "---";
