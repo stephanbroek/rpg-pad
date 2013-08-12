@@ -297,6 +297,7 @@
 
 			<div class="tabContent" id="skills">
 				<h2>Skills</h2>
+				<span id="pen">-1</span>
 				<div id="skls">
 					<table>
 						<tr>
@@ -308,14 +309,14 @@
 							<th></th>
 							<th></th>
 						</tr>
-						<tr id="acro">
+						<tr id="acro" class="pen">
 							<td><input type="checkbox" class="tick" />Acrobatics *<span class="stat">DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="aprs">
 							<td><input type="checkbox" class="tick" />Appraise<span class="stat">INT</span></td>
@@ -324,7 +325,7 @@
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="bluf">
 							<td><input type="checkbox" class="tick" />Bluff<span class="stat">CHA</span></td>
@@ -333,34 +334,34 @@
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="clmb">
+						<tr id="clmb" class="pen">
 							<td><input type="checkbox" class="tick" />Climb *<span class="stat">STR</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl str"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="crf1">
-							<td><input type="checkbox" class="tick" />Craft: <input class="cft-box" /><span class="stat">INT</span></td>
+							<td><input type="checkbox" class="tick" />Craft: <input class="cft-box desc" /><span class="stat">INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="crf2">
-							<td><input type="checkbox" class="tick" />Craft: <input class="cft-box" /><span class="stat">INT</span></td>
+							<td><input type="checkbox" class="tick" />Craft: <input class="cft-box desc" /><span class="stat">INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="dipl">
 							<td><input type="checkbox" class="tick" />Diplomacy<span class="stat">CHA</span></td>
@@ -369,16 +370,16 @@
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="ddev">
+						<tr id="ddev" class="trn pen">
 							<td><input type="checkbox" class="tick" />Disable Device *<span class="stat">* DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="disg">
 							<td><input type="checkbox" class="tick" />Disguise<span class="stat">CHA</span></td>
@@ -387,34 +388,34 @@
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="esca">
+						<tr id="esca" class="pen">
 							<td><input type="checkbox" class="tick" />Escape Artist *<span class="stat">DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="fly">
+						<tr id="fly" class="pen">
 							<td><input type="checkbox" class="tick" />Fly *<span class="stat">DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="han">
+						<tr id="han" class="trn">
 							<td><input type="checkbox" class="tick" />Handle Animal<span class="stat">* CHA</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="heal">
 							<td><input type="checkbox" class="tick" />Heal<span class="stat">WIS</span></td>
@@ -423,7 +424,7 @@
 							<td class="abl wis"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="itmd">
 							<td><input type="checkbox" class="tick" />Intimidate<span class="stat">CHA</span></td>
@@ -432,70 +433,70 @@
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="kn1">
-							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box" /><span class="stat">* INT</span></td>
+						<tr id="kn1" class="trn">
+							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box desc" /><span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="kn2">
-							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box" /><span class="stat">* INT</span></td>
+						<tr id="kn2" class="trn">
+							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box desc" /><span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="kn3">
-							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box" /><span class="stat">* INT</span></td>
+						<tr id="kn3" class="trn">
+							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box desc" /><span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="kn4">
-							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box" /><span class="stat">* INT</span></td>
+						<tr id="kn4" class="trn">
+							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box desc" /><span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="kn5">
-							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box" /><span class="stat">* INT</span></td>
+						<tr id="kn5" class="trn">
+							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box desc" /><span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="kn6">
-							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box" /><span class="stat">* INT</span></td>
+						<tr id="kn6" class="trn">
+							<td><input type="checkbox" class="tick" />Kn: <input class="kn-box desc" /><span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="ling">
+						<tr id="ling" class="trn">
 							<td><input type="checkbox" class="tick" />Linguistics<span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="perc">
 							<td><input type="checkbox" class="tick" />Perception<span class="stat">WIS</span></td>
@@ -504,7 +505,7 @@
 							<td class="abl wis"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="perf">
 							<td><input type="checkbox" class="tick" />Perform<span class="stat">CHA</span></td>
@@ -513,25 +514,25 @@
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="prof">
-							<td><input type="checkbox" class="tick" />Profession<span class="stat">* WIS</span></td>
+						<tr id="prof" class="trn">
+							<td><input type="checkbox" class="tick" />Profession: <input class="prof-box desc" /><span class="stat">* WIS</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl wis"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="ride">
+						<tr id="ride" class="pen">
 							<td><input type="checkbox" class="tick" />Ride *<span class="stat">DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="sens">
 							<td><input type="checkbox" class="tick" />Sense Modive<span class="stat">WIS</span></td>
@@ -540,34 +541,34 @@
 							<td class="abl wis"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="slig">
+						<tr id="slig" class="trn pen">
 							<td><input type="checkbox" class="tick" />Slight of Hand *<span class="stat">* DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="spel">
+						<tr id="spel" class="trn">
 							<td><input type="checkbox" class="tick" />Spellcraft<span class="stat">* INT</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl int"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="slth">
+						<tr id="slth" class="pen">
 							<td><input type="checkbox" class="tick" />Stealth *<span class="stat">DEX</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="surv">
 							<td><input type="checkbox" class="tick" />Survival<span class="stat">WIS</span></td>
@@ -576,7 +577,7 @@
 							<td class="abl wis"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="swim">
 							<td><input type="checkbox" class="tick" />Swim *<span class="stat">DEX</span></td>
@@ -585,20 +586,20 @@
 							<td class="abl dex"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen arm" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
-						<tr id="magd">
+						<tr id="magd" class="trn">
 							<td><input type="checkbox" class="tick" />Use Magic Device<span class="stat">* CHA</span></td>
 							<td class="tot"></td>
 							<td><input type="number" class="rank" placeholder="0" /></td>
 							<td class="abl cha"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id="cus1">
 							<td>
-								<input type="checkbox" class="tick" /> <input class="name" /><span class="stat cust"><select dir="rtl">
+								<input type="checkbox" class="tick" /> <input class="name desc" /><span class="stat cust"><select dir="rtl">
 								<option value="str">STR</option>
 								<option value="dex">DEX</option>
 								<option value="con">CON</option>
@@ -612,11 +613,11 @@
 							<td class="abl str"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id='cus2'>
 							<td>
-								<input type="checkbox" class="tick" /> <input class="name" /><span class="stat cust"><select dir="rtl">
+								<input type="checkbox" class="tick" /> <input class="name desc" /><span class="stat cust"><select dir="rtl">
 								<option value="str">STR</option>
 								<option value="dex">DEX</option>
 								<option value="con">CON</option>
@@ -630,11 +631,11 @@
 							<td class="abl str"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id='cus3'>
 							<td>
-								<input type="checkbox" class="tick" /> <input class="name" /><span class="stat cust"><select dir="rtl">
+								<input type="checkbox" class="tick" /> <input class="name desc" /><span class="stat cust"><select dir="rtl">
 								<option value="str">STR</option>
 								<option value="dex">DEX</option>
 								<option value="con">CON</option>
@@ -648,11 +649,11 @@
 							<td class="abl str"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 						<tr id='cus4'>
 							<td>
-								<input type="checkbox" class="tick" /> <input class="name" /><span class="stat cust"><select dir="rtl">
+								<input type="checkbox" class="tick" /> <input class="name desc" /><span class="stat cust"><select dir="rtl">
 								<option value="str">STR</option>
 								<option value="dex">DEX</option>
 								<option value="con">CON</option>
@@ -666,7 +667,7 @@
 							<td class="abl str"></td>
 							<td class="trn"></td>
 							<td><input type="number" class="msc" /></td>
-							<td><input type="number" class="msc" /><input type="hidden" class="pen" value="0" /></td>
+							<td><input type="number" class="msc" /></td>
 						</tr>
 					</table>
 				</div>

@@ -50,15 +50,17 @@ function updateSkill(skill)
 	}
 	$("div#skls tr#" + skill + " td.trn").html(trained);
 
-	var pen = parseInt($("div#skls #" + skill + " .pen").val(), 10);
+	console.log(parseInt($("div#skills span#pen").val(), 10));
 
-	var tot = rank + abl + trained + msc + pen;
+	var pen = $("div#skls tr#" + skill).hasClass("pen") ? parseInt($("div#skills span#pen").html(), 10) : 0;
+
+	var tot = !($("div#skls tr#" + skill).hasClass("trn") && rank == 0) ? rank + abl + trained + msc + pen : "---";
+
 	$("div#skls #" + skill + " .tot").html(tot);
 }
 
 function updateCustSkill(skill)
 {
-	console.log("trigger: cust: " + skill);
 	var stat = $("div#skls tr#" + skill + " .stat select").val();
 	var mod = parseInt($('#' + stat + '-mod').html(), 10);
 	$("div#skls tr#" + skill + " .abl").html(mod);

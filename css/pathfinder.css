@@ -224,6 +224,10 @@ div#misc input {
 	text-align: center;
 }
 
+div#skills span#pen {
+	float:right;
+}
+
 
 div#skls th {
 	width: 40px;
@@ -279,6 +283,15 @@ div#skls input.kn-box {
 
 div#skls input.name {
 	width: 175px;
+}
+
+div#skls input.prof-box {
+	width: 100px;
+}
+
+div#skls input.desc {
+	text-align: left;
+	padding-left: 4px;
 }
 
 div#skls td, div #skls td input {
