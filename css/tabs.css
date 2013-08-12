@@ -28,6 +28,7 @@ ul#tabs li a {
 	border-bottom:none;
 	text-decoration:none;
 	padding:.3em;
+	font-size: 12px;
 }
 
 ul#tabs li a:hover {
