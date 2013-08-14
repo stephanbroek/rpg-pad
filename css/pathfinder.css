@@ -6,6 +6,7 @@ input {
 	background-color: #FFF9CE;
 	border-bottom-color: #888;
 	border-bottom-width: 1px;
+	padding-left: 4px;
 }
 
 input[type=button], input[type=submit] {
@@ -224,7 +225,7 @@ div#misc input {
 	text-align: center;
 }
 
-div#skills span#pen {
+div#skills span#pen-box {
 	float:right;
 }
 
@@ -291,7 +292,6 @@ div#skls input.prof-box {
 
 div#skls input.desc {
 	text-align: left;
-	padding-left: 4px;
 }
 
 div#skls td, div #skls td input {
@@ -306,7 +306,12 @@ div#skls td.tot {
 	font-weight: bold;
 }
 
-td, th {
+div#skls-title {
+	width: 504px;
+	margin: 5px 0;
+}
+
+td, th, div {
 	//background: -moz-linear-gradient(-80deg, #0F0 0%, #F00 100%, #F00 50%);
 }
 

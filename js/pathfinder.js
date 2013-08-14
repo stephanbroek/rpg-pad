@@ -42,12 +42,8 @@ function updateSkill(skill)
 			msc += val;	
 	});
 
-	if($("div#skls tr#" + skill + " .tick").is(':checked') && rank>0)
-	{
-		var trained = 3;
-	} else {
-		var trained = 0;
-	}
+	var trained = $("div#skls tr#" + skill + " .tick").is(':checked') && rank>0 ? 3 : 0;
+
 	$("div#skls tr#" + skill + " td.trn").html(trained);
 
 	var pen = $("div#skls tr#" + skill).hasClass("pen") ? parseInt($("div#skills span#pen").html(), 10) : 0;
@@ -55,6 +51,28 @@ function updateSkill(skill)
 	var tot = !($("div#skls tr#" + skill).hasClass("trn") && rank == 0) ? rank + abl + trained + msc + pen : "---";
 
 	$("div#skls #" + skill + " .tot").html(tot);
+
+	var ranks = 0;
+	var skills = 0;
+
+	var test = $("div#skls tr").each(function() {
+		var id = $(this).attr("id");
+
+		if(id == undefined)
+			return;
+
+		rank = parseInt($("div#skls tr#" + id + " input.rank").val(), 10);
+
+		ranks += !isNaN(rank) ? rank : 0;
+
+		skills += !isNaN(rank) && rank>0 ? 1 : 0;
+
+	});
+
+	$("div#skls-title span#ranks").html(ranks);
+	$("div#skls-title span#skills").html(skills);
+
+
 }
 
 function updateCustSkill(skill)
